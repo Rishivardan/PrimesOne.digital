@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -47,20 +46,17 @@ nav {
 }
 
 .get-started-btn {
-    background: #3deefe;
-    color: white ;
+    background: #1e40af;
+    color: white;
     padding: 0.75rem 1.75rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s;
-    transition: background 0.3s, transform 0.2s;
 }
 
 .get-started-btn:hover {
-    background: #3deefe;
-    transform: translateY(-2px);
-    
+    background: #1e3a8a;
 }
 
 /* Hero Section */
@@ -117,7 +113,6 @@ nav {
     font-weight: 600;
     border: 2px solid #e5e7eb;
     transition: border-color 0.3s, transform 0.2s;
-
 }
 
 .btn-secondary:hover {
@@ -295,10 +290,11 @@ nav {
 
 .article-card {
     background: white;
-    padding: 2rem;
+    padding: 0;
     border-radius: 12px;
     border: 1px solid #e5e7eb;
     transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
 .article-card:hover {
@@ -306,7 +302,32 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.article-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.article-card-content {
+    padding: 2rem;
+}
+
 .article-category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     display: inline-block;
     padding: 0.4rem 1rem;
     background: #dbeafe;
@@ -314,10 +335,10 @@ nav {
     border-radius: 6px;
     font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
-.article-card h3 {
+.article-card-content h3 {
     font-size: 1.4rem;
     color: #1f2937;
     margin-bottom: 1.5rem;
