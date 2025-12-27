@@ -1,0 +1,243 @@
+/* Privacy Hero Section */
+.privacy-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0e7490 100%);
+    padding: 6rem 5%;
+    text-align: center;
+    color: white;
+}
+
+.privacy-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.shield-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.privacy-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.privacy-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    margin-bottom: 1rem;
+}
+
+.last-updated {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 1.5rem;
+}
+
+/* Privacy Features Section */
+.privacy-features {
+    padding: 5rem 5%;
+    background: #f9fafb;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: #dbeafe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: #1e40af;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Privacy Content Section */
+.privacy-content {
+    padding: 5rem 5%;
+    background: white;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.content-section:last-child {
+    border-bottom: none;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header svg {
+    color: #1e40af;
+    flex-shrink: 0;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.content-section h4 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.content-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.content-section ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1e40af;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.data-type {
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-left: 4px solid #1e40af;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.data-type h4 {
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.data-type p {
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f0f9ff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: none;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
+
+.contact-item strong {
+    color: #1e40af;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .privacy-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .privacy-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .shield-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .shield-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+}

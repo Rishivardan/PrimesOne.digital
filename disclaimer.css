@@ -1,0 +1,244 @@
+/* Disclaimer Hero Section */
+.disclaimer-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0e7490 100%);
+    padding: 6rem 5%;
+    text-align: center;
+    color: white;
+}
+
+.disclaimer-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.warning-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.disclaimer-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.disclaimer-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    margin-bottom: 1rem;
+}
+
+.last-updated {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 1.5rem;
+}
+
+/* Warning Notice Section */
+.warning-notice {
+    padding: 3rem 5%;
+    background: #f9fafb;
+}
+
+.notice-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fef3c7;
+    border: 2px solid #f59e0b;
+    border-left: 6px solid #f59e0b;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.notice-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: #fbbf24;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.notice-content h3 {
+    font-size: 1.5rem;
+    color: #92400e;
+    margin-bottom: 0.75rem;
+}
+
+.notice-content p {
+    color: #78350f;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Disclaimer Content Section */
+.disclaimer-content {
+    padding: 5rem 5%;
+    background: white;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.content-section:last-child {
+    border-bottom: none;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header svg {
+    color: #1e40af;
+    flex-shrink: 0;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.content-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.content-section ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1e40af;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Info Box */
+.info-box {
+    padding: 1.5rem;
+    background: #eff6ff;
+    border-left: 4px solid #1e40af;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.info-box strong {
+    color: #1e40af;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f0f9ff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: none;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
+
+.contact-item strong {
+    color: #1e40af;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .disclaimer-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .notice-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .disclaimer-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .warning-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .warning-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .notice-container {
+        padding: 1.5rem;
+    }
+
+    .notice-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .notice-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+}
